@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE FileTableSpec SYSTEM "de/unikn/knime/data/filereader/FileTableSpec.dtd">
+
+<FileTableSpec id="Iris Plants Database">
+
+    <url file_name="data_someMissing.all">
+    </url>
+    
+    <column_header specified="false" number="5">
+        <column name="Sepal-length" type="Double" missing="?"/>
+        <column name="Sepal-width"  type="Double" missing="?"/>
+        <column name="Petal-length" type="Double" missing="?"/>
+        <column name="Petal-width"  type="Double" missing="?"/>
+        <column name="Class"        type="String" missing="?"/>
+    </column_header>
+
+    <row_header specified="false" prefix="iris_"/>
+
+    <column_delimiter value=" "/>
+    
+    <row_delimiter value="&#10;"/>
+    
+</FileTableSpec>
