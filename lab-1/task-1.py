@@ -54,6 +54,16 @@ plot_petal = table_setosa.plot.scatter(x=names[3], y=names[2], label='Iris setos
 table_versicolora.plot.scatter(ax = plot_petal, x=names[3], y=names[2], label='Iris versicolora', color='Blue');
 table_virginica.plot.scatter(ax = plot_petal, x=names[3], y=names[2], label='Iris virginica', color='Red');
 
+# Scatter matrix
+
+color_map = {"Iris-setosa": "Green", 
+               "Iris-versicolor": "Blue", 
+               "Iris-virginica": "Red"}
+              
+colors = table["Class"].map(lambda x: color_map.get(x))
+
+pd.plotting.scatter_matrix(table, color=colors, figsize=(9, 9));
+
 # Box plot
 
 table.plot.box()
