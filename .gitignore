@@ -102,3 +102,18 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# KNIME files
+.knimeLock
+.project
+.savedWithData
+workflowset.meta
+
+# Knime examples
+knime-workspace/Example Workflows/
+
+# KNIME directories containing node data
+internal/
+port_*/
+.metadata/
+internalTables/
