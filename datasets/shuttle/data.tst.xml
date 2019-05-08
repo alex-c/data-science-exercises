@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE FileTableSpec SYSTEM "de/unikn/knime/data/filereader/FileTableSpec.dtd">
+
+<FileTableSpec id="Shuttle Dataset">
+
+    <url file_name="data.tst">
+    </url>
+    
+    <column_header specified="false" number="10">
+        <column name="A1" type="Integer"/>
+        <column name="A2" type="Integer"/>
+        <column name="A3" type="Integer"/>
+        <column name="A4" type="Integer"/>
+        <column name="A5" type="Integer"/>
+        <column name="A6" type="Integer"/>
+        <column name="A7" type="Integer"/>
+        <column name="A8" type="Integer"/>
+        <column name="A9" type="Integer"/>
+        <column name="Class" type="String"/>
+    </column_header>
+
+    <row_header specified="false" prefix="shuttle_"/>
+
+    <column_delimiter value=" "/>
+    
+    <row_delimiter value="&#10;"/>
+    
+</FileTableSpec>
